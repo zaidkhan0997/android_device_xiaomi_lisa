@@ -12,6 +12,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Camera
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_INCLUDES_MIUI_CAMERA := true
+MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Miui-Cam
@@ -39,6 +40,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Include proprietary files
 include vendor/xiaomi/lisa/BoardConfigVendor.mk
